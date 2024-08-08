@@ -1,11 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <title>Drive API Quickstart</title>
+    <meta charset="utf-8" />
+    <style>
+      table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+      th, td {
+          border: 1px solid black;
+          padding: 8px;
+          text-align: left;
+      }
+      th {
+          background-color: #f2f2f2;
+          color: white;
+      }
+  </style>
+  </head>
+  <body>
+    <h1>test API GOOGLE</p>
+      <button type="button" id="authorize-btn">Authorize</button>
+      <button type="button" id="get-all-btn">Get all file</button>
+      <form action="">
+      <div>
+        <label for="new_file">Ajouter un fichier</l>
+        <input type="file" name="" id="file" multiple>
+      </div>
+      <table id="fileTable">
+        <thead>
+            <tr>
+                <th>Nom du fichier</th>
+                <th>Prévisualiser</th>
+                <th>Modifier</th>
+                <th>Supprimer</th>
+            </tr>
+        </thead>
+        <tbody id="fileList">
+        </tbody>
+    </table>
+      <div>
+        <input type="submit" value="Soummetre">
+      </div>
+    </form>
+
+  </body>
+  <script src="script.js" type="module"></script>
 </html>
